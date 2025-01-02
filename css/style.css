@@ -8,9 +8,8 @@ body {
 
 .container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
     padding: 20px;
 }
 
@@ -20,6 +19,16 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 30px 40px;
     max-width: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.cartsBox {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
     width: 100%;
 }
 
@@ -76,9 +85,33 @@ input[type="number"]:focus {
     font-size: 16px;
     font-weight: bold;
     transition: background-color 0.3s;
-    user-select: none; /* Teks tidak dapat dipilih */
+    margin-top: 10px;
 }
 
 .button:hover {
     background-color: #45a049;
+}
+
+.carts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cart {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cartName,
+.cartItem,
+.cartTotal {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
 }
