@@ -22,13 +22,21 @@
         </div>
         <div class="cartsBox">
             <h1>Daftar Pembelian</h1>
-            <div class="carts" id="carts">
-                <div class="cart">
-                    <div class="cartName">Nama Pembeli</div>
-                    <div class="cartItem">Nama Barang</div>
-                    <div class="cartTotal">Total Pembelian</div>
-                </div>
-            </div>
+            <table class="cartTable">
+                <thead>
+                    <tr>
+                        <th>Nama Pembeli</th>
+                        <th>Nama Barang</th>
+                        <th>Total Pembelian</th>
+                    </tr>
+                </thead>
+                <tbody id="carts">
+                    <!-- akan di generate di javascript -->
+                </tbody>
+            </table>
+        </div>        
+        <div class="cetak">
+            <div id="buttonPrint">print</div>
         </div>
     </div>
     <script src="js/script.js"></script>
