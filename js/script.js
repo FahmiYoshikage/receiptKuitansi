@@ -45,3 +45,8 @@ buttonPrint.addEventListener('click', () => {
     buttonPrint.style.display = 'none'; // me hide print button
     window.print(); // me print page
 })
+
+window.addEventListener('afterprint', () => {
+    document.querySelector('.containerForm').style.display = 'block'; // show form again
+    buttonPrint.style.display = 'block'; // show print button again
+});
